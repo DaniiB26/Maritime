@@ -7,8 +7,8 @@ obj/
 *.user
 *.suo
 
-# Configurări sensibile
 appsettings.Development.json
+appsettings.json
 
 # Logs
 *.log
