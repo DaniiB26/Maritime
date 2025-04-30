@@ -1,0 +1,40 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Visual Studio
+.vscode/
+*.code-workspace
+.vs/
+*.dbmdl
+
+# Database
+*.mdf
+*.ldf
+
+# Logs
+*.log
+
+# npm
+node_modules/
+dist/
+angular.json.tmp
+
+# Environment secrets
+.env
+.env.*
+
+# Others
+*.DS_Store
+Thumbs.db
