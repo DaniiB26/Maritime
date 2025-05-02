@@ -1,0 +1,16 @@
+<h2>Lista navelor</h2>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Max Speed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ship of ships">
+      <td>{{ ship.name }}</td>
+      <td>{{ ship.maxSpeed }} knots</td>
+    </tr>
+  </tbody>
+</table>
