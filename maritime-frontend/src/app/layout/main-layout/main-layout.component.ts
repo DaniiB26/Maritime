@@ -12,8 +12,8 @@ import { RouterOutlet } from '@angular/router';
           <ul class="nav--list">
             <li class="item"><a href="/ships">Ships</a></li>
             <li class="item"><a href="/voyages">Voyages</a></li>
-            <li class="item"><a href="/">Ports</a></li>
-            <li class="item"><a href="/">Countries</a></li>
+            <li class="item"><a href="/ports">Ports</a></li>
+            <li class="item"><a href="/countries">Countries</a></li>
           </ul>
         </nav>
       </div>

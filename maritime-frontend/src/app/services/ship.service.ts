@@ -20,4 +20,20 @@ export class ShipService {
   getShips(): Observable<Ship[]> {
     return this.http.get<Ship[]>(this.apiUrl);
   }
+
+  getShip(id: number): Observable<Ship> {
+    return this.http.get<Ship>(`${this.apiUrl}/${id}`);
+  }
+
+  createShip(ship: Ship): Observable<Ship> {
+    return this.http.post<Ship>(this.apiUrl, ship);
+  }
+
+  updateShip(id: number, ship: Ship): Observable<void> {
+    return this.http.put<void>(`${this.apiUrl}/${id}`, ship);
+  }
+
+  deleteShip(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
 }

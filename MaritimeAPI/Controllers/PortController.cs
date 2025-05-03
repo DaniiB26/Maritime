@@ -19,7 +19,9 @@ namespace MaritimeAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Port>>> GetPorts()
         {
-            return await _context.Ports.ToListAsync();
+            return await _context.Ports
+                            .Include(p => p.Country)
+                            .ToListAsync();
         }
 
         [HttpGet("{Id}")]

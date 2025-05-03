@@ -22,7 +22,9 @@ namespace MaritimeAPI.Controllers
         {
             return await _context.Voyages
                             .Include(v => v.DeparturePort)
+                                .ThenInclude(p => p.Country)
                             .Include(v => v.ArrivalPort)
+                                .ThenInclude(p => p.Country)
                             .Include(v => v.Ship)
                             .ToListAsync();
 

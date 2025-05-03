@@ -7,10 +7,11 @@ export interface Voyage {
   voyageDate: string;
   voyageStart: string;
   voyageEnd: string;
-  departurePortId: number;
-  arrivalPortId: number;
-  shipId: number;
+  departurePort: { id: number; name: string; countryId: number };
+  arrivalPort: { id: number; name: string; countryId: number };
+  ship: { id: number; name: string; maxSpeed: number };
 }
+
 
 @Injectable({
   providedIn: 'root'

@@ -5,7 +5,7 @@ namespace MaritimeAPI.Models
         public int Id { get; set; }
         public required string Name { get; set; }
         public int CountryId { get; set; }
-        public required Country Country { get; set; }
+        public Country? Country { get; set; }
 
     }
 }

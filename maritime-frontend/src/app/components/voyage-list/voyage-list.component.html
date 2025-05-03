@@ -1,1 +1,24 @@
-<p>voyage-list works!</p>
+<div class="table-container">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Voyage Date</th>
+        <th>Departure Port</th>
+        <th>Arrival Port</th>
+        <th>Voyage Start</th>
+        <th>Voyage End</th>
+        <th>Ship</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let voyage of voyages">
+        <td>{{ voyage.voyageDate | date : "dd-MM-yyyy" }}</td>
+        <td>{{ voyage.departurePort.name }}</td>
+        <td>{{ voyage.arrivalPort.name }}</td>
+        <td>{{ voyage.voyageStart | date : "dd-MM-yyyy HH:mm" }}</td>
+        <td>{{ voyage.voyageEnd | date : "dd-MM-yyyy HH:mm" }}</td>
+        <td>{{ voyage.ship.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
